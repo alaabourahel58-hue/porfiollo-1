@@ -2,5 +2,7 @@
   "name": "Alex Morgan - Developer Portfolio",
   "description": "Modern developer portfolio for computer science student Alex Morgan, featuring projects, technical skills, learning roadmap, and clean architecture.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

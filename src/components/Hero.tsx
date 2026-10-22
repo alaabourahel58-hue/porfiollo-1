@@ -107,16 +107,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal }) => {
                 <ArrowRight className="w-4 h-4" />
               </a>
 
-              <a
-                href="#contact"
-                className={`inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-lg border transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 ${
-                  theme === 'dark'
-                    ? 'border-zinc-800 bg-zinc-900/60 hover:bg-zinc-800 text-zinc-200 hover:text-white'
-                    : 'border-zinc-300 bg-white hover:bg-zinc-50 text-zinc-800 hover:text-zinc-950'
-                }`}
-              >
-                <span>Get In Touch</span>
-              </a>
 
               {/* CV Download / Instructions Button */}
               <button
