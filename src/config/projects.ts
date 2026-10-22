@@ -42,7 +42,7 @@ export const projectsData: ProjectItem[] = [
     longDescription:
       'Built as a modular, single-page application utilizing modern frontend tooling. Focuses on accessibility, responsive design systems, theme transitions, and clean code separation through centralized configuration.',
     category: 'Web Development',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    technologies: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
     status: 'Demo project',
     // GitHub and Live URLs are left undefined or empty per instructions
     githubUrl: undefined,
@@ -60,7 +60,7 @@ export const projectsData: ProjectItem[] = [
         'Modular React component hierarchy',
         'Utility-first styling with custom dark-mode token palette',
         'Strict TypeScript interfaces for all configuration data',
-        'Zero bloated dependencies with high performance score'
+        'Vite-powered development and production build'
       ],
       fileStructurePreview: [
         'src/config/profile.ts',
