@@ -1,0 +1,1393 @@
+# PROJECT: MODERN DEVELOPER PORTFOLIO WEBSITE
+
+## 1. ROLE AND OBJECTIVE
+
+Act as a senior full-stack developer, UI/UX designer, frontend architect, and web performance specialist.
+
+Your mission is to design and build a complete, modern, professional, responsive, and production-ready personal portfolio website for a fictional computer science student interested in software development, web technologies, computer networks, and cybersecurity.
+
+The website must have a premium visual identity, smooth animations, excellent usability, clean code, and a fully responsive layout.
+
+The entire project must be compatible with deployment on Vercel.
+
+Use the following technologies when appropriate:
+
+* Next.js with the App Router.
+* React.
+* TypeScript.
+* Tailwind CSS.
+* Lucide React for icons.
+* Framer Motion or Motion for animations, provided the chosen version is compatible with the project dependencies.
+
+Use Google AI Studio to generate the project files and implementation.
+
+IMPORTANT: Do not create a simple mockup or a static landing page. Build a complete, coherent website with reusable components, functional navigation, accessible interactions, and a clear project structure.
+
+Do not stop after generating a homepage preview. Implement the complete website and all required files.
+
+If a technical decision is necessary, choose the most reliable, maintainable, and Vercel-compatible solution.
+
+---
+
+## 2. PERSONAL PROFILE AND DEFAULT INFORMATION
+
+Create a fictional portfolio profile using the following placeholder information.
+
+These details are demonstration content, not verified real-world information. Keep the personal information in one centralized configuration file so the owner can easily replace it later.
+
+Full name:
+Alex Morgan
+
+Professional title:
+Computer Science Student | Aspiring Software Developer
+
+Short introduction:
+"Hello, I'm Alex Morgan, a computer science student passionate about technology, software development, and digital innovation. I'm continuously learning new skills, exploring modern web technologies, and building personal projects to improve my technical abilities."
+
+Extended biography:
+"I'm a computer science student interested in understanding how technology works and how software can solve real-world problems. My learning journey includes programming fundamentals, web development, computer systems, networking, and cybersecurity.
+
+I believe in continuous learning, experimentation, and building practical projects to transform theoretical knowledge into useful digital experiences.
+
+My current goal is to strengthen my programming skills, develop a solid technical foundation, and gradually specialize in areas such as software engineering and cybersecurity."
+
+Location:
+Oran, Algeria
+
+Use this location only as editable demonstration content. Do not add a street address or other precise location information.
+
+Email:
+[hello@example.com](mailto:hello@example.com)
+
+GitHub:
+https://github.com/
+
+LinkedIn:
+https://www.linkedin.com/
+
+Portfolio URL:
+To be configured after deployment.
+
+Professional status:
+Computer Science Student
+
+Interests:
+
+* Software development.
+* Frontend development.
+* Programming and algorithms.
+* Computer systems.
+* Computer networking.
+* Cybersecurity.
+* Learning new technologies.
+* UI/UX design.
+
+Languages:
+
+* Arabic: native-level placeholder.
+* French: intermediate placeholder.
+* English: intermediate placeholder.
+
+IMPORTANT PERSONAL INFORMATION RULES:
+
+1. Do not invent a real identity, actual employment history, completed degrees, professional certifications, awards, or verifiable achievements.
+2. Treat Alex Morgan as fictional demonstration content.
+3. Clearly mark example projects as demo projects or learning projects.
+4. Never claim that a project has been deployed, that an application has real users, or that a certification has been earned unless explicitly confirmed by the owner.
+5. Use placeholder contact information and clearly document which values must be replaced before publication.
+6. Never display fake testimonials, fabricated client reviews, or invented company logos.
+7. Keep all profile information editable from a single configuration file.
+
+---
+
+## 3. DESIGN DIRECTION AND VISUAL IDENTITY
+
+Create a premium portfolio inspired by modern developer portfolios, high-end SaaS interfaces, and minimalist technology websites.
+
+The overall visual style should communicate:
+
+* Technical competence.
+* Creativity.
+* Professionalism.
+* Curiosity.
+* Precision.
+* A strong interest in modern technology.
+
+The website should feel carefully designed rather than automatically generated.
+
+### Color palette
+
+Use a sophisticated dark theme as the default.
+
+Background:
+#09090B
+
+Secondary background:
+#111116
+
+Card background:
+#17171D
+
+Primary text:
+#F4F4F5
+
+Secondary text:
+#A1A1AA
+
+Accent color:
+#8B5CF6
+
+Secondary accent:
+#22D3EE
+
+Border color:
+#27272A
+
+Use purple and cyan accents selectively.
+
+Avoid excessive gradients, oversized glowing effects, unnecessary decorative elements, and distracting animations.
+
+Use subtle gradients and restrained lighting to create visual depth.
+
+### Typography
+
+Use a modern, highly readable font such as Inter, Geist, or another compatible sans-serif font.
+
+Typography should include:
+
+* Large, bold headings.
+* Clear section titles.
+* Comfortable paragraph line height.
+* Consistent spacing.
+* Strong visual hierarchy.
+
+Use a monospace font for small technical labels, terminal-inspired components, and code snippets.
+
+### Layout
+
+Create a spacious, well-balanced layout with:
+
+* A centered content container.
+* Consistent margins.
+* Responsive grid systems.
+* Rounded cards.
+* Subtle borders.
+* Clear section separation.
+* Carefully controlled whitespace.
+
+The desktop version should feel spacious and premium.
+
+The mobile version should be compact, readable, and easy to navigate.
+
+Do not overcrowd the page with unnecessary elements.
+
+---
+
+## 4. WEBSITE ARCHITECTURE
+
+Build the website as a complete single-page portfolio with a clean component architecture.
+
+The main sections must be:
+
+1. Navigation bar.
+2. Hero section.
+3. About section.
+4. Skills section.
+5. Projects section.
+6. Learning journey section.
+7. Education section.
+8. Contact section.
+9. Footer.
+
+Use smooth scrolling between sections.
+
+Each navigation link must point to the correct section.
+
+Highlight the active section in the navigation bar when practical.
+
+The website must not contain broken links, empty buttons, or decorative controls that pretend to perform actions.
+
+If a feature cannot function without external credentials or additional configuration, implement a clear fallback and document the required setup.
+
+---
+
+## 5. NAVIGATION BAR
+
+Create a responsive, elegant navigation bar.
+
+### Left side
+
+Display a minimalist personal logo using the initials:
+
+AM
+
+Use a small geometric symbol or a simple typographic logo.
+
+Do not use copyrighted company logos.
+
+Clicking the logo must return the visitor to the top of the page.
+
+### Navigation links
+
+* Home
+* About
+* Skills
+* Projects
+* Learning
+* Education
+* Contact
+
+### Right side
+
+Include:
+
+* A theme toggle for dark and light modes.
+* A prominent "Let's Talk" button.
+
+The "Let's Talk" button must scroll to the contact section or open the configured email address.
+
+### Behavior
+
+The navigation bar should:
+
+* Remain visible or become sticky while scrolling.
+* Use a subtle background and border.
+* Support mobile screens.
+* Display an accessible mobile menu.
+* Close the mobile menu after a navigation link is selected.
+* Support keyboard navigation.
+* Avoid layout shifts.
+
+Persist the selected theme using localStorage when appropriate.
+
+Prevent theme flashing during initial page rendering if possible.
+
+Respect the visitor's reduced-motion preference.
+
+---
+
+## 6. HERO SECTION
+
+Create a visually impressive first screen.
+
+The hero section should immediately communicate who the person is, what they are learning, and what visitors can explore.
+
+### Small introductory label
+
+Display:
+
+"COMPUTER SCIENCE STUDENT"
+
+Add a subtle decorative indicator.
+
+### Main heading
+
+Use this text:
+
+"Building my future, one line of code at a time."
+
+Emphasize selected words with the accent color.
+
+The heading must be visually striking but remain readable on smaller screens.
+
+### Supporting text
+
+Use:
+
+"I'm a computer science student exploring software development, modern web technologies, and cybersecurity. I enjoy learning, experimenting, and turning ideas into practical digital experiences."
+
+### Primary actions
+
+Create two buttons:
+
+1. "Explore My Projects"
+
+   * Scrolls to the projects section.
+
+2. "Get In Touch"
+
+   * Scrolls to the contact section.
+
+### Availability label
+
+Use an honest, non-misleading label such as:
+
+"Currently learning and building personal projects."
+
+Do not claim that the owner is available for employment unless this is explicitly configured.
+
+### Hero visual
+
+On desktop, place a visually appealing technical illustration or interactive developer card beside the main text.
+
+The illustration can include:
+
+* A stylized terminal window.
+* A few short code snippets.
+* A small decorative grid.
+* Floating geometric shapes.
+* A subtle animated gradient.
+
+Example terminal content:
+
+const developer = {
+name: "Alex Morgan",
+focus: ["Web Development", "Programming"],
+learning: "Cybersecurity"
+};
+
+This code is illustrative and must not imply that a real application is running.
+
+Do not make the visual too complicated.
+
+On mobile, stack the content vertically and maintain a clear hierarchy.
+
+### Social links
+
+Include GitHub and LinkedIn icons.
+
+Use the configured URLs.
+
+If the URLs are placeholders, visually indicate that they must be replaced before publication or keep the links disabled with a clear explanation.
+
+Do not send users to misleading or fabricated profile pages.
+
+---
+
+## 7. ABOUT SECTION
+
+Create an elegant About section with a two-column layout on desktop.
+
+### Left column
+
+Display:
+
+* A small section label: "ABOUT ME".
+* A heading: "Curiosity drives everything I build."
+* The biography provided in the profile configuration.
+
+### Right column
+
+Display a grid of information cards:
+
+Card 1:
+Title: "Current Focus"
+Description: "Building programming fundamentals and exploring modern web technologies."
+
+Card 2:
+Title: "Technical Interests"
+Description: "Software development, computer systems, networking, and cybersecurity."
+
+Card 3:
+Title: "Learning Philosophy"
+Description: "Learn the fundamentals, practice consistently, and improve through real projects."
+
+Card 4:
+Title: "Long-Term Goal"
+Description: "Develop strong engineering skills and explore a specialization in cybersecurity."
+
+These cards must remain editable.
+
+Do not invent specific career achievements.
+
+### Design details
+
+Use:
+
+* Subtle borders.
+* Minimal icons.
+* Small accent indicators.
+* Consistent spacing.
+* Soft hover transitions.
+
+The About section must be concise enough to read comfortably.
+
+---
+
+## 8. SKILLS SECTION
+
+Create a modern technical skills section.
+
+Organize skills into four categories.
+
+### Category A: Programming
+
+Example skills:
+
+* C
+* Python
+* JavaScript
+* TypeScript
+
+### Category B: Web Development
+
+Example skills:
+
+* HTML5
+* CSS3
+* React
+* Next.js
+* Tailwind CSS
+
+### Category C: Systems and Networking
+
+Example skills:
+
+* Linux fundamentals
+* Command-line basics
+* Computer architecture fundamentals
+* Networking fundamentals
+* Git and GitHub
+
+### Category D: Cybersecurity
+
+Example skills:
+
+* Cybersecurity fundamentals
+* Networking security concepts
+* Web security fundamentals
+* Security awareness
+* Basic threat modeling concepts
+
+IMPORTANT:
+
+The skills above are examples, not verified abilities.
+
+Create a centralized skills configuration that allows each skill to have a status:
+
+* Learning
+* Practiced
+* Proficient
+
+Set all unverified skills to "Learning" by default.
+
+Do not label the fictional owner an expert.
+
+Do not create fake skill percentages such as "Python 95%" or "Cybersecurity 90%".
+
+Instead, use honest status badges and category labels.
+
+### Interactions
+
+Implement:
+
+* Category filtering or tabs.
+* Subtle hover effects.
+* Accessible focus states.
+* Responsive skill cards.
+
+All tabs must work correctly.
+
+The interface must remain useful when JavaScript animations are unavailable.
+
+---
+
+## 9. PROJECTS SECTION
+
+Create a professional project gallery.
+
+The default project data must be explicitly labeled as illustrative demonstration content.
+
+Use a minimum of three example projects.
+
+### Project 1: Personal Portfolio Website
+
+Description:
+"A responsive portfolio website designed to present personal information, technical interests, and example projects in a clean and accessible interface."
+
+Category:
+Web Development
+
+Example technologies:
+
+* Next.js
+* TypeScript
+* Tailwind CSS
+
+Status:
+Demo project
+
+GitHub URL:
+Not configured
+
+Live URL:
+Not configured
+
+### Project 2: Programming Practice Collection
+
+Description:
+"A collection of beginner programming exercises covering algorithms, conditions, loops, functions, and basic data structures."
+
+Category:
+Programming
+
+Example technologies:
+
+* C
+* Python
+
+Status:
+Learning project
+
+GitHub URL:
+Not configured
+
+Live URL:
+Not applicable
+
+### Project 3: Cybersecurity Learning Lab
+
+Description:
+"A conceptual learning project documenting basic networking concepts, security terminology, and defensive cybersecurity exercises in a controlled educational environment."
+
+Category:
+Cybersecurity
+
+Example technologies:
+
+* Linux
+* Networking fundamentals
+* Documentation
+
+Status:
+Educational demonstration
+
+GitHub URL:
+Not configured
+
+Live URL:
+Not configured
+
+IMPORTANT PROJECT RULES:
+
+1. Never fabricate repository URLs.
+2. Never create fake live demo links.
+3. Never claim that these projects already exist.
+4. Clearly mark the default examples as demonstrations.
+5. Allow the owner to replace the example content with real projects.
+6. Hide action buttons when their destinations are not configured.
+7. Never link a button to "#" merely to make it appear functional.
+
+### Project card design
+
+Each card must include:
+
+* Project title.
+* Short description.
+* Category badge.
+* Technology tags.
+* Project status.
+* Optional thumbnail or custom illustration.
+* GitHub button when a valid URL exists.
+* Live Demo button when a valid URL exists.
+
+Use a responsive grid:
+
+* Three columns on large screens when space allows.
+* Two columns on medium screens.
+* One column on small screens.
+
+Add subtle hover effects and accessible transitions.
+
+### Filtering
+
+Implement functional filters:
+
+* All
+* Web Development
+* Programming
+* Cybersecurity
+
+Filtering must operate on the project data.
+
+Display an attractive empty state if a selected category contains no projects.
+
+---
+
+## 10. LEARNING JOURNEY SECTION
+
+Create a section titled:
+
+"My Learning Journey"
+
+This section should communicate ongoing learning rather than fabricate a professional timeline.
+
+Display three learning stages:
+
+### Stage 1: Foundations
+
+Description:
+"Learning programming fundamentals, logical reasoning, algorithms, and computer science concepts."
+
+### Stage 2: Building
+
+Description:
+"Practicing through small projects and exploring web development, development tools, and version control."
+
+### Stage 3: Exploring Cybersecurity
+
+Description:
+"Studying networking fundamentals, operating systems, and the basic principles of defensive security."
+
+Label the stages as a personal learning roadmap.
+
+Do not assign false completion dates.
+
+Do not imply that all stages have been completed.
+
+Allow the owner to edit each stage and its status.
+
+Create a modern vertical timeline on desktop and a compact stacked layout on mobile.
+
+Use subtle connecting lines and restrained accent colors.
+
+---
+
+## 11. EDUCATION SECTION
+
+Create an Education section with a clean, professional design.
+
+Use the following default content:
+
+Institution:
+"University — To be specified"
+
+Program:
+"Computer Science"
+
+Level:
+"Undergraduate studies — Demonstration profile"
+
+Description:
+"Studying computer science fundamentals, programming, algorithms, and computer systems."
+
+Status:
+"Details to be confirmed"
+
+IMPORTANT:
+
+Do not invent a real institution, a graduation year, an academic distinction, or a completed degree.
+
+Do not claim a specific qualification unless the owner confirms it.
+
+Provide a centralized configuration so the owner can replace the institution, program, dates, and description.
+
+Include an optional Certifications subsection.
+
+By default, display a message:
+
+"No verified certifications have been added yet."
+
+Allow real certifications to be added later with:
+
+* Certification name.
+* Issuing organization.
+* Issue date.
+* Credential URL.
+* Optional credential identifier.
+
+Only display certifications that have been explicitly configured.
+
+Do not fabricate certification credentials.
+
+---
+
+## 12. CONTACT SECTION
+
+Create an elegant contact section with the heading:
+
+"Have an idea? Let's connect."
+
+Supporting text:
+
+"I'm always interested in learning, sharing ideas, and discussing technology. Feel free to reach out using the contact details below."
+
+Include:
+
+* Email address.
+* GitHub.
+* LinkedIn.
+* A contact form.
+
+Use the placeholder email:
+[hello@example.com](mailto:hello@example.com)
+
+Clearly document that this address must be replaced before the website is published.
+
+### Contact form fields
+
+* Name.
+* Email.
+* Subject.
+* Message.
+
+### Form requirements
+
+Implement:
+
+* Required field validation.
+* Email format validation.
+* Helpful error messages.
+* Accessible labels.
+* Loading states.
+* Success and error feedback.
+* Protection against accidental repeated submissions.
+
+Do not make the form pretend to send messages if no backend exists.
+
+### Contact form implementation
+
+Use a secure, Vercel-compatible server-side approach if a functional contact form is configured.
+
+Possible implementation:
+
+* A Next.js Route Handler.
+* Server-side validation.
+* An email provider such as Resend, configured through environment variables.
+
+Do not expose API keys in client-side code.
+
+Do not require a paid external service for the basic portfolio to run.
+
+If no email provider is configured:
+
+* Show a clear configuration message to the site owner.
+* Provide a working email link using a mailto URL as a fallback.
+* Do not display a false success message.
+* Do not store personal messages insecurely.
+
+If Resend is implemented, document the required environment variables and sender-domain verification.
+
+Use appropriate server-side validation and basic anti-abuse protections.
+
+---
+
+## 13. FOOTER
+
+Create a minimal and elegant footer.
+
+Include:
+
+* The initials "AM".
+* A short sentence: "Learning, building, and improving every day."
+* Navigation links.
+* Configured social links.
+* The current year generated dynamically.
+
+Include a small note:
+
+"Personal portfolio template. Replace demonstration content with verified information before publication."
+
+Do not add fake company affiliations, sponsorships, or copyright claims over third-party assets.
+
+---
+
+## 14. DARK MODE AND LIGHT MODE
+
+Implement a complete theme system.
+
+Dark mode is the default.
+
+Light mode should use:
+
+* A light neutral background.
+* Dark readable text.
+* Subtle gray borders.
+* Consistent accent colors.
+* Accessible contrast.
+
+The theme toggle must:
+
+* Work on desktop and mobile.
+* Update all relevant components.
+* Persist the selection where appropriate.
+* Display the correct icon and accessible label.
+* Avoid hydration errors in Next.js.
+* Avoid a visible flash of the wrong theme where practical.
+
+Use a consistent theme strategy rather than manually changing isolated component colors.
+
+---
+
+## 15. ANIMATIONS AND MICRO-INTERACTIONS
+
+Use modern, subtle animations to improve the experience.
+
+Possible animations:
+
+* Hero content fade-in.
+* Small vertical movement when sections enter the viewport.
+* Smooth hover transitions on cards.
+* Subtle button interactions.
+* Navigation transitions.
+* Gentle decorative movement in the hero illustration.
+
+Avoid:
+
+* Excessive particle effects.
+* Large animations that slow the page.
+* Aggressive parallax.
+* Infinite animations on every element.
+* Animations that make text difficult to read.
+* Unnecessary animation libraries.
+
+Respect the operating system's reduced-motion setting.
+
+Ensure that content remains accessible when animations are disabled.
+
+Do not use animation as a substitute for meaningful functionality.
+
+---
+
+## 16. RESPONSIVE DESIGN
+
+The website must work correctly on:
+
+* Small mobile phones.
+* Large mobile phones.
+* Tablets.
+* Laptops.
+* Desktop monitors.
+* Wide screens.
+
+Implement a mobile-first approach.
+
+Requirements:
+
+* No horizontal overflow.
+* No overlapping text.
+* No broken navigation.
+* No clipped buttons.
+* Appropriate font scaling.
+* Touch-friendly controls.
+* Consistent spacing.
+* Responsive project cards.
+* Properly stacked hero content.
+* Readable code illustrations.
+* Correct handling of long text.
+
+Test common viewport sizes, including approximately:
+
+* 320 px.
+* 375 px.
+* 768 px.
+* 1024 px.
+* 1440 px.
+
+The design must remain visually consistent across screen sizes.
+
+---
+
+## 17. ACCESSIBILITY
+
+Follow good accessibility practices.
+
+Requirements:
+
+* Semantic HTML.
+* Correct heading hierarchy.
+* Accessible navigation.
+* Keyboard-friendly controls.
+* Visible focus states.
+* Appropriate ARIA labels when necessary.
+* Accessible form errors.
+* Sufficient text contrast.
+* Descriptive alternative text for meaningful images.
+* Empty alternative text for decorative images.
+* No information conveyed exclusively through color.
+* Reduced-motion support.
+
+Use native HTML elements whenever possible.
+
+Avoid unnecessary ARIA attributes when semantic HTML already provides the required behavior.
+
+---
+
+## 18. SEO AND METADATA
+
+Implement basic technical SEO.
+
+Include:
+
+* A descriptive page title.
+* A meaningful meta description.
+* Canonical URL configuration when the production domain is known.
+* Open Graph metadata.
+* Social sharing metadata.
+* Appropriate favicon configuration.
+* Semantic content structure.
+* A robots.txt file where appropriate.
+* A sitemap when useful.
+
+Suggested page title:
+
+"Alex Morgan | Computer Science Student & Developer"
+
+Suggested meta description:
+
+"Explore the learning journey, technical interests, example projects, and skills of Alex Morgan, a computer science student interested in software development and cybersecurity."
+
+The name and description must be generated from the central profile configuration where practical.
+
+Do not invent a production domain.
+
+Use a clearly documented placeholder for the canonical URL until the actual Vercel domain or custom domain is configured.
+
+Do not add misleading structured data or claim professional qualifications that have not been verified.
+
+---
+
+## 19. PERFORMANCE OPTIMIZATION
+
+Optimize the site for fast loading and smooth interaction.
+
+Requirements:
+
+* Use the Next.js App Router appropriately.
+* Prefer Server Components when client-side interactivity is unnecessary.
+* Add "use client" only where required.
+* Minimize unnecessary JavaScript.
+* Avoid oversized dependencies.
+* Use optimized image handling.
+* Avoid layout shifts.
+* Use efficient CSS.
+* Lazy-load nonessential below-the-fold imagery where appropriate.
+* Avoid autoplaying heavy videos.
+* Prevent unnecessary re-renders.
+* Use lightweight icons.
+
+Do not introduce a database, authentication system, or backend service unless it is genuinely required.
+
+The portfolio should work without a database.
+
+Avoid adding dependencies simply for visual effects.
+
+---
+
+## 20. SECURITY AND PRIVACY
+
+Follow basic security best practices.
+
+Requirements:
+
+* Never expose secret keys in browser code.
+* Use environment variables for private configuration.
+* Validate form input on the server.
+* Avoid unsafe HTML rendering.
+* Do not collect unnecessary personal information.
+* Do not add tracking scripts by default.
+* Do not create fake analytics.
+* Do not embed third-party services without documenting them.
+* Avoid storing contact messages unless a secure storage system has been deliberately configured.
+* Never commit real credentials to the repository.
+
+If an external service is integrated, clearly document what information it receives.
+
+The base portfolio must not require user accounts, passwords, or personal visitor data.
+
+---
+
+## 21. PROJECT STRUCTURE
+
+Use a clear, maintainable project structure.
+
+A suggested structure is:
+
+portfolio/
+├── public/
+│   ├── images/
+│   ├── favicon.ico
+│   └── cv.pdf
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   ├── globals.css
+│   │   ├── robots.ts
+│   │   ├── sitemap.ts
+│   │   └── api/
+│   │       └── contact/
+│   │           └── route.ts
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Projects.tsx
+│   │   ├── LearningJourney.tsx
+│   │   ├── Education.tsx
+│   │   ├── Contact.tsx
+│   │   ├── Footer.tsx
+│   │   ├── ThemeToggle.tsx
+│   │   └── ui/
+│   ├── config/
+│   │   ├── profile.ts
+│   │   ├── skills.ts
+│   │   ├── projects.ts
+│   │   └── education.ts
+│   └── lib/
+│       ├── utils.ts
+│       └── validation.ts
+├── .env.example
+├── .gitignore
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── tsconfig.json
+├── README.md
+└── LICENSE
+
+This structure is a reference, not an inflexible requirement.
+
+Adapt it to the versions and configuration generated by the chosen Next.js setup.
+
+Do not create unnecessary files or empty components.
+
+Ensure that every imported module exists.
+
+Ensure that every configuration file is valid and consistent with the installed dependency versions.
+
+Do not include a contact API route if the project does not implement a server-side contact form.
+
+---
+
+## 22. CENTRALIZED CONFIGURATION
+
+Make the portfolio easy to customize.
+
+Create a central profile configuration file containing fields such as:
+
+* Full name.
+* Initials.
+* Professional title.
+* Short introduction.
+* Biography.
+* Location.
+* Email.
+* GitHub URL.
+* LinkedIn URL.
+* Profile image.
+* CV file path.
+* Website URL.
+* Navigation labels.
+* Theme preferences.
+
+Store skills, projects, education, and learning stages in separate data files where appropriate.
+
+The visual components must read from these configuration files.
+
+Avoid duplicating the same personal information in multiple components.
+
+Add comments explaining how the owner can change the information.
+
+Use appropriate TypeScript interfaces or types for the data.
+
+Provide safe defaults for missing information.
+
+If a field is empty, hide the corresponding optional element rather than rendering broken content.
+
+---
+
+## 23. CV DOWNLOAD FEATURE
+
+Add a "Download CV" button only when a real CV file has been provided.
+
+Use a local file in the public directory, such as:
+
+public/cv.pdf
+
+Do not generate a fake CV containing fabricated qualifications.
+
+If the file does not exist, hide the download button or replace it with an editable placeholder clearly marked for the owner.
+
+Document how to add a real PDF.
+
+Ensure the download behavior works after deployment on Vercel.
+
+---
+
+## 24. VERCEL DEPLOYMENT REQUIREMENTS
+
+The project must be designed specifically for straightforward deployment on Vercel.
+
+Requirements:
+
+* Use a supported Next.js configuration.
+* Use the standard Next.js build command.
+* Include a valid package.json.
+* Include a working production build.
+* Avoid dependencies on local filesystem state at runtime.
+* Avoid hardcoded localhost URLs in production logic.
+* Use environment variables for external integrations.
+* Avoid unsupported server configurations.
+* Avoid requiring a custom server unless absolutely necessary.
+* Avoid Docker as a mandatory deployment requirement.
+* Ensure that all required public assets are included.
+* Ensure that the application does not depend on an external database.
+* Ensure that the homepage renders successfully after deployment.
+
+Use the following standard scripts when compatible with the generated project:
+
+"scripts": {
+"dev": "next dev",
+"build": "next build",
+"start": "next start",
+"lint": "eslint ."
+}
+
+Adapt the scripts if the selected versions of Next.js and ESLint require a different configuration.
+
+Do not claim that the deployment has been tested unless it has actually been tested.
+
+If the environment supports command execution, run the build and fix any errors before declaring the project complete.
+
+---
+
+## 25. ENVIRONMENT VARIABLES
+
+If an external contact service is configured, provide a .env.example file.
+
+For example:
+
+RESEND_API_KEY=
+CONTACT_FROM_EMAIL=
+CONTACT_TO_EMAIL=
+
+Use only the variables actually required by the implementation.
+
+Never put real secrets in .env.example.
+
+Never expose private environment variables through NEXT_PUBLIC_ variables.
+
+Document that environment variables must be configured in the Vercel project settings.
+
+If no external contact service is implemented, do not require these variables for the website to build.
+
+---
+
+## 26. README DOCUMENTATION
+
+Create a complete README.md containing:
+
+1. Project overview.
+2. Main features.
+3. Technology stack.
+4. Requirements.
+5. Installation instructions.
+6. Local development instructions.
+7. Project structure.
+8. Instructions for editing the profile.
+9. Instructions for adding projects.
+10. Instructions for updating skills.
+11. Instructions for adding a real CV.
+12. Instructions for configuring contact functionality.
+13. Environment variable documentation.
+14. Production build instructions.
+15. GitHub repository setup.
+16. Vercel deployment instructions.
+17. Custom domain configuration.
+18. Troubleshooting common errors.
+
+Include commands such as:
+
+npm install
+
+npm run dev
+
+npm run build
+
+Explain that the user must first install Node.js and npm if they are not available.
+
+Document how to push the project to a GitHub repository and import that repository into Vercel.
+
+Explain that the deployment environment variables must be configured separately if an external service is used.
+
+Never include credentials in the README.
+
+---
+
+## 27. CODE QUALITY REQUIREMENTS
+
+The generated source code must follow professional standards.
+
+Requirements:
+
+* TypeScript types for important data structures.
+* Reusable React components.
+* Clear naming conventions.
+* Consistent formatting.
+* No unnecessary duplication.
+* No unexplained magic values when a named constant is appropriate.
+* No unused imports.
+* No missing imports.
+* No invalid JSX.
+* No broken internal links.
+* No fake functionality.
+* No unnecessary dependencies.
+* No fabricated API responses.
+* No placeholder functions pretending to work.
+* No avoidable TypeScript errors.
+* No console errors caused by the implementation.
+
+Avoid suppressing TypeScript errors merely to make the build pass.
+
+Avoid using "any" when a suitable type can be defined.
+
+Keep components reasonably small and maintainable.
+
+---
+
+## 28. TESTING AND QUALITY ASSURANCE
+
+Before considering the implementation complete, verify the following.
+
+### Build
+
+* Dependencies install successfully.
+* TypeScript compilation succeeds.
+* The production build succeeds.
+* All imports resolve correctly.
+* The application starts successfully.
+
+### Navigation
+
+* All navigation links work.
+* The logo returns to the top.
+* The mobile menu opens and closes.
+* The theme toggle works.
+* Internal section links point to the correct targets.
+
+### Projects
+
+* Category filters work.
+* Project cards render from configuration data.
+* Unconfigured URLs are not displayed as working links.
+* Empty states are handled properly.
+
+### Contact
+
+* Required fields are validated.
+* Invalid email addresses are rejected.
+* The success message is displayed only after a genuine successful submission.
+* An unconfigured backend does not pretend to send messages.
+
+### Responsive design
+
+* Mobile navigation works.
+* No horizontal overflow occurs.
+* Text remains readable.
+* Buttons remain accessible.
+* Cards adapt to smaller screens.
+
+### Accessibility
+
+* Keyboard navigation works.
+* Focus indicators are visible.
+* Images have appropriate alternative text.
+* Form fields have accessible labels.
+* Reduced-motion preferences are respected.
+
+### Production
+
+* The homepage works on a production build.
+* Assets resolve correctly.
+* There are no hardcoded local development URLs in production logic.
+* Missing optional data does not break rendering.
+* No secret keys appear in client-side bundles.
+
+If execution and testing tools are unavailable, explain which checks remain unverified instead of pretending they passed.
+
+---
+
+## 29. FINAL VISUAL QUALITY
+
+The final website must look like a carefully designed portfolio created by a skilled developer.
+
+Prioritize:
+
+* A strong first impression.
+* A clear and memorable hero section.
+* Consistent spacing.
+* Professional typography.
+* Cohesive colors.
+* Excellent mobile responsiveness.
+* Subtle interactions.
+* Readable content.
+* A clear information hierarchy.
+* Fast loading.
+* Accessibility.
+* Maintainable code.
+
+Avoid generic template aesthetics.
+
+Do not fill the interface with unnecessary cards.
+
+Do not use excessive gradients or animations.
+
+Do not invent testimonials or achievements to make the portfolio appear more impressive.
+
+The design should remain polished even when only a few real projects have been added.
+
+Use tasteful CSS-generated visuals and simple SVG illustrations when they are sufficient.
+
+Avoid depending on random external image URLs.
+
+---
+
+## 30. IMPLEMENTATION INSTRUCTIONS FOR GOOGLE AI STUDIO
+
+Follow these steps in order:
+
+STEP 1:
+Analyze the entire specification and identify the required pages, components, configuration files, and dependencies.
+
+STEP 2:
+Choose a compatible Next.js, React, TypeScript, and Tailwind CSS setup.
+
+STEP 3:
+Define the project architecture and create the complete source code.
+
+STEP 4:
+Implement the design system and global styles.
+
+STEP 5:
+Build every portfolio section.
+
+STEP 6:
+Connect all sections to the centralized configuration files.
+
+STEP 7:
+Implement responsive navigation, theme switching, project filtering, and contact functionality with an honest fallback.
+
+STEP 8:
+Implement SEO metadata, accessibility features, and performance optimizations.
+
+STEP 9:
+Create all required configuration files, including package.json, TypeScript configuration, Next.js configuration, and .gitignore.
+
+STEP 10:
+Create a complete README.md with local development and Vercel deployment instructions.
+
+STEP 11:
+Check for missing files, invalid imports, incompatible dependencies, broken links, and incomplete interactions.
+
+STEP 12:
+If command execution is available, run the build and fix errors.
+
+STEP 13:
+Present a concise summary of the completed implementation and explain how to run it locally and deploy it on Vercel.
+
+### OUTPUT RULES
+
+Generate actual source files, not merely code snippets or an architectural explanation.
+
+Do not omit important files.
+
+Do not replace implementation with comments such as "TODO: implement this later" for core functionality.
+
+If the environment can create or export a complete project, provide the full project in that form.
+
+If the environment only supports generating files individually, clearly organize the output by file path and provide complete file contents for each required file.
+
+Do not claim that a
