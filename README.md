@@ -33,7 +33,7 @@ All profile data, projects, skills, education, and learning milestones are maint
 
 - **Framework**: React 19
 - **Build Tool**: Vite 8
-- **Language**: TypeScript 5.8+ (Strict type checking)
+- **Language**: TypeScript (strict type checking)
 - **Styling**: Tailwind CSS v4 (`@tailwindcss/vite`)
 - **Icons**: Lucide React
 - **Typography**: Plus Jakarta Sans & JetBrains Mono
@@ -42,7 +42,7 @@ All profile data, projects, skills, education, and learning milestones are maint
 
 ## 4. Requirements
 
-- **Node.js**: `v18.0.0` or higher (Node 20+ recommended)
+- **Node.js**: `20.19+` or `22.12+` (required by Vite 8)
 - **Package Manager**: `npm` (v9+), `pnpm`, or `yarn`
 
 ---
@@ -51,8 +51,8 @@ All profile data, projects, skills, education, and learning milestones are maint
 
 1. Clone or download the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/developer-portfolio.git
-   cd developer-portfolio
+   git clone https://github.com/alaabourahel58-hue/porfiollo-1.git
+   cd porfiollo-1
    ```
 
 2. Install project dependencies:
@@ -291,9 +291,10 @@ Deploying this portfolio on Vercel takes under 2 minutes:
 ### "Module not found" or dependency issues
 Run a clean install:
 ```bash
-rm -rf node_modules package-lock.json
 npm install
 ```
+
+If the dependency installation is still broken, remove `node_modules` and `package-lock.json` manually, then run `npm install` again. This avoids shell-specific cleanup commands.
 
 ### Build fails on Vercel
 Ensure your Node.js version in Vercel project settings (Settings > General > Node.js Version) is set to `20.x` or `22.x`.
