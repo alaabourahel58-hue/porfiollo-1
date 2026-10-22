@@ -31,8 +31,8 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     } else {
       root.classList.remove('dark');
       root.classList.add('light');
-      document.body.style.backgroundColor = '#FAFAFA';
-      document.body.style.color = '#09090B';
+      document.body.style.backgroundColor = '#FFF7FB';
+      document.body.style.color = '#29212A';
     }
     try {
       localStorage.setItem('portfolio-theme', theme);
