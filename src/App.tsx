@@ -8,6 +8,7 @@ import { Projects } from './components/Projects';
 import { LearningJourney } from './components/LearningJourney';
 import { Education } from './components/Education';
 import { Contact } from './components/Contact';
+import { SendEmail } from './components/SendEmail';
 import { Footer } from './components/Footer';
 import { CvModal } from './components/CvModal';
 import { ConfigGuideModal } from './components/ConfigGuideModal';
@@ -31,6 +32,7 @@ export default function App() {
           <LearningJourney />
           <Education />
           <Contact />
+          <SendEmail />
         </main>
 
         {/* Footer */}
