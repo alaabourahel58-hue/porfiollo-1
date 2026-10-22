@@ -34,3 +34,116 @@
     background: #3F3F46;
   }
 }
+
+/* Light theme: soft pink surfaces, consistent accents, and readable contrast. */
+.light {
+  color-scheme: light;
+  --theme-bg: #fff7fb;
+  --theme-surface: #ffffff;
+  --theme-surface-muted: #fff0f6;
+  --theme-text: #29212a;
+  --theme-text-muted: #625563;
+  --theme-border: #f0cddd;
+  --theme-accent: #c02670;
+  --theme-accent-strong: #9d174d;
+  background-color: var(--theme-bg);
+  color: var(--theme-text);
+}
+
+.light body {
+  background-color: var(--theme-bg) !important;
+  color: var(--theme-text) !important;
+}
+
+/* Neutral text classes were designed for dark backgrounds; correct them in light mode. */
+.light [class~="text-zinc-100"],
+.light [class~="text-zinc-200"],
+.light [class~="text-zinc-300"],
+.light [class~="text-zinc-400"],
+.light [class~="text-zinc-500"],
+.light [class~="text-zinc-600"],
+.light [class~="text-zinc-700"],
+.light [class~="text-zinc-800"],
+.light [class~="text-zinc-900"],
+.light [class~="text-zinc-950"] {
+  color: var(--theme-text-muted) !important;
+}
+
+.light h1, .light h2, .light h3, .light h4,
+.light [class~="text-zinc-100"],
+.light [class~="text-zinc-900"] {
+  color: var(--theme-text) !important;
+}
+
+/* Replace the purple/blue brand accents with a coordinated pink palette. */
+.light [class~="text-violet-200"],
+.light [class~="text-violet-300"],
+.light [class~="text-violet-400"],
+.light [class~="text-violet-500"],
+.light [class~="text-violet-600"],
+.light [class~="text-cyan-300"],
+.light [class~="text-cyan-400"],
+.light [class~="text-emerald-300"],
+.light [class~="text-emerald-400"] {
+  color: var(--theme-accent) !important;
+}
+
+.light [class~="bg-zinc-900"],
+.light [class~="bg-zinc-800"],
+.light [class~="bg-zinc-700"] {
+  background-color: var(--theme-surface-muted) !important;
+}
+
+.light [class~="bg-zinc-50"],
+.light [class~="bg-white"] {
+  background-color: var(--theme-surface) !important;
+}
+
+.light [class~="border-zinc-800"],
+.light [class~="border-zinc-700"],
+.light [class~="border-zinc-300"],
+.light [class~="border-zinc-200"] {
+  border-color: var(--theme-border) !important;
+}
+
+.light [class~="bg-violet-600"],
+.light [class~="bg-violet-500"],
+.light [class~="bg-rose-500"] {
+  background-color: var(--theme-accent) !important;
+  color: #ffffff !important;
+}
+
+.light [class~="border-violet-800"],
+.light [class~="border-violet-500"],
+.light [class~="border-cyan-800"],
+.light [class~="border-cyan-500"] {
+  border-color: var(--theme-border) !important;
+}
+
+.light input, .light textarea, .light select {
+  color: var(--theme-text) !important;
+  background-color: #ffffff !important;
+  border-color: var(--theme-border) !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #766777 !important;
+  opacity: 1;
+}
+
+.light button:focus-visible,
+.light a:focus-visible,
+.light input:focus-visible,
+.light textarea:focus-visible,
+.light select:focus-visible {
+  outline: 2px solid var(--theme-accent) !important;
+  outline-offset: 3px;
+}
+
+.light ::-webkit-scrollbar-thumb {
+  background: #e7a7c5;
+}
+.light ::-webkit-scrollbar-thumb:hover {
+  background: #cf6f9d;
+}
